@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="container">
+        <table border="0">
+            <tr>
+                <td><label for="first-name">First Name:</label></td>
+                <td><label for="last-name">Last Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="First Name" id="first-name" onkeyup="Fnm()"></td>
+                <td><input type="text" placeholder="Last Name" id="last-name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Enter Your Emai:</label><br>
+                    <input type="email" placeholder="Enter your Email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="p-number">Enter your Phone Number:</label><br>
+                    <input type="number" placeholder="Enter your number" id="p-number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="b-date">Enter your Birthdate:</label><br>
+                    <input type="date" id="b-date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="a-time">Schedule Your Appointment time </label><br>
+                    <input type="time" id="a-time">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="f-color">Select your Favorite color:</label><br>
+                    <select  id="f-color">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Red">Red</option>
+                        <option value="Chose Mor"><p>Other</p></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="radio">Select Payment method</label><br></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="r1">
+                    <label for="r1">Cash on delivery</label><br>
+                    <input type="radio" id="r2">
+                    <label for="r2">Debit Card</label><br>
+                    <input type="radio" id="r3">
+                    <label for="r3">Credit Card</label>
+                </td>
+                
+                <td>
+                    <input type="radio" id="r4">
+                    <label for="r4">Paytm</label><br>
+                    <input type="radio" id="r5">
+                    <label for="r5">UPI</label><br>
+                    <input type="radio" id="r6">
+                    <label for="r6">Pay on delivery</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Select Your age</label><br>
+                    <input type="range"><span id="span-range">hnfgh</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="u-photo">Uplode your photo</label><br>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="checkbox">
+                    <a href="#"><label for="checkbox">terms&condition</label></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
