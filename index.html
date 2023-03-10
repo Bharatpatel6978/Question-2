@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,102 +9,113 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 </head>
-<body>
-    <script src="index.js"></script>
-    <div class="container">
-        <table border="0">
-            <tr>
-                <td><label for="first-name">First Name:</label></td>
-                <td><label for="last-name">Last Name</label></td>
-            </tr>
-            <tr>
-                <td><input type="text" placeholder="First Name" id="first-name" onkeyup="Fnm()"></td>
-                <td><input type="text" placeholder="Last Name" id="last-name"></td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email">Enter Your Emai:</label><br>
-                    <input type="email" placeholder="Enter your Email" id="email">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="p-number">Enter your Phone Number:</label><br>
-                    <input type="number" placeholder="Enter your number" id="p-number">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="b-date">Enter your Birthdate:</label><br>
-                    <input type="date" id="b-date">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="a-time">Schedule Your Appointment time </label><br>
-                    <input type="time" id="a-time">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="f-color">Select your Favorite color:</label><br>
-                    <select  id="f-color">
-                        <option value="Black">Black</option>
-                        <option value="White">White</option>
-                        <option value="Blue">Blue</option>
-                        <option value="Yellow">Yellow</option>
-                        <option value="Red">Red</option>
-                        <option value="Chose Mor"><p>Other</p></option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="radio">Select Payment method</label><br></td>
 
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="r1">
-                    <label for="r1">Cash on delivery</label><br>
-                    <input type="radio" id="r2">
-                    <label for="r2">Debit Card</label><br>
-                    <input type="radio" id="r3">
-                    <label for="r3">Credit Card</label>
-                </td>
-                
-                <td>
-                    <input type="radio" id="r4">
-                    <label for="r4">Paytm</label><br>
-                    <input type="radio" id="r5">
-                    <label for="r5">UPI</label><br>
-                    <input type="radio" id="r6">
-                    <label for="r6">Pay on delivery</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="age">Select Your age</label><br>
-                    <input type="range"><span id="span-range">hnfgh</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="u-photo">Uplode your photo</label><br>
-                    <input type="file">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="checkbox">
-                    <a href="#"><label for="checkbox">terms&condition</label></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="Submit">
-                </td>
-            </tr>
-        </table>
+<body style="background-color: black;">
+    <script src="index.js"></script>
+    <div class="container " id="container1">
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="First Name" id="first-name" class="inputbr" onkeyup="Fnm()">
+                        <br><label for="first-name" class="errorp1">Enter valid Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Last Name" class="inputbr" id="last-name">
+                        <br><label for="last-name" class="errorp1">Enter valid Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Enter your Email" id="email" class="inputbr">
+                        <br><label for="email" class="errorp1">Enter valid Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" placeholder="Enter your number" id="p-number" class="inputbr">
+                        <br><label for="p-number" class="errorp2">Enter valid Number</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="b-date" class="lablen1">Enter your Birthdate:</label><br>
+                        <input type="date" id="b-date" class="inputbr1">
+                        <label for="b-date" class="errorp">Select Date</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="a-time" class="lablen">Schedule Your Appointment time </label><br>
+                        <input type="time" id="a-time" class="inputbr2">
+                        <label for="a-time" class="errorp">Set time</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="f-color" class="lablen">Select your Favorite color:</label>
+                        <select id="f-color">
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Red">Red</option>
+                            <option value="Chose Mor">
+                                <p>Other</p>
+                            </option>
+                        </select>
+                        <label for="f-color" class="errorp">Select color</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="radio" class="lablen2">Select Payment method</label>
+                        <label for="radio" class="errorp">Chose method</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="r1" class="lablen">
+                        <label for="r1" class="lablen3">Cash on delivery</label><br>
+                        <input type="radio" id="r2" class="lablen">
+                        <label for="r2" class="lablen3">Debit Card</label><br>
+                        <input type="radio" id="r3" class="lablen">
+                        <label for="r3" class="lablen3">Credit Card</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="range" class="lablen">Select Your age</label><br>
+                        <input type="range" class="lablenr"><span id="span-range" class="lablen4">00</span>
+                        <label for="range" class="errorp">Select age</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="u-photo" class="lablen5">Uplode your photo</label>
+                        <label for="u-photo" class="errorp">Choose file</label>
+                        <input type="file" class="lablen6">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="checkbox" class="lablen7" style="height: 2rem; width: 2rem;">
+                        <a href="#"><label for="checkbox" class="lablen8">terms&condition</label></a>
+                        <label for="checkbox" class="errorp">Please check</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit" class="lablen9">
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
+
 </html>

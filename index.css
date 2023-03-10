@@ -1,11 +1,168 @@
-body
+*
 {
-    background-image: url('assets/img1.jpg');
-    background-image: no-repeat;
-    background-size: cover;
+    padding: 0;
+    margin: 0;
+    
 }
-.container
+table
 {
-    margin-top: 9rem;
-    background-color: white;
+    margin-top: 4rem;
+    width: 56vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 20rem 20px red;
+    margin-left: 12rem;
+}
+/* input
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+} */
+.inputbr
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 32rem;
+    margin-left: 6rem;
+    font-size: 25px;
+    padding-top: 2.5rem;
+    outline: none;
+}
+.errorp
+{
+    
+    color: red;
+    /* visibility: hidden; */
+}
+.errorp1
+{
+    
+    color: red;
+    /* visibility: hidden; */
+    margin-left: 30.5rem;
+}
+.errorp2
+{
+    
+    color: red;
+    /* visibility: hidden; */
+    margin-left: 29.5rem;
+}
+::placeholder
+{
+    color: #ffffff75;
+}
+.lablen
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+}
+.lablen1
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+}
+.inputbr1
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 12rem;
+    margin-left: 6rem;
+    font-size: 25px;
+    outline: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.inputbr2
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 12rem;
+    margin-left: 6rem;
+    font-size: 25px;
+    padding-top: 0;
+    outline: none;
+}
+.lablen2
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+}
+.lablen3
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+.lablen4
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+}
+.lablenr
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 6rem;
+}
+.lablen5
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+.lablen6
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 0   ;
+}
+input.lablen7
+{
+    
+    margin-left: 6rem;
+    
+}
+.lablen8
+{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    font-size: 35px;
+}
+.lablen9
+{
+    margin-left: 11rem;
+    margin-top: 1.5rem;
+    font-size: 54px;
+    width: 19rem;
+    height: 5rem;
+    margin-bottom: 2rem;
 }
