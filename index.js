@@ -75,90 +75,90 @@ function Email()
     }
 }
 
-// function Phone()
-// {
+function Phone()
+{
    
-//     let phone = document.getElementById("p-number");
-//     let p = phone.value;
-//     if(p.length == 0)
-//     {
-//         alert("enter name");
-//         return false;
-//     }
-//     if(!p.match(/^[A-Za-z]+$/))
-//     {
-//         console.log("sfgd");
-//         alert("enter value");
-//         return  false;
-//     }
-//     else
-//     {
-//         alert("done");
-//     }
-// }
+    let phone = document.getElementById("p-number");
+    let p = phone.value;
+    if(p.length == 0)
+    {
+        alert("enter name");
+        return false;
+    }
+    if(!p.match(/^[A-Za-z]+$/))
+    {
+        console.log("sfgd");
+        alert("enter value");
+        return  false;
+    }
+    else
+    {
+        alert("done");
+    }
+}
 
-// function Bdate()
-// {
+function Bdate()
+{
    
-//     let date = document.getElementById("b-date");
-//     let b = date.value;
-//     if(b.length == 0)
-//     {
-//         alert("enter name");
-//         return false;
-//     }
-//     if(!b.match(/^[A-Za-z]+$/))
-//     {
-//         console.log("sfgd");
-//         alert("enter value");
-//         return  false;
-//     }
-//     else
-//     {
-//         alert("done");
-//     }
-// }
+    let date = document.getElementById("b-date");
+    let b = date.value;
+    if(b.length == 0)
+    {
+        alert("enter name");
+        return false;
+    }
+    if(!b.match(/^[A-Za-z]+$/))
+    {
+        console.log("sfgd");
+        alert("enter value");
+        return  false;
+    }
+    else
+    {
+        alert("done");
+    }
+}
 
-// function Stime()
-// {
+function Stime()
+{
    
-//     let time = document.getElementById("a-time");
-//     let t = time.value;
-//     if(t.length == 0)
-//     {
-//         alert("enter name");
-//         return false;
-//     }
-//     if(!t.match(/^[A-Za-z]+$/))
-//     {
-//         console.log("sfgd");
-//         alert("enter value");
-//         return  false;
-//     }
-//     else
-//     {
-//         alert("done");
-//     }
-// }
+    let time = document.getElementById("a-time");
+    let t = time.value;
+    if(t.length == 0)
+    {
+        alert("enter name");
+        return false;
+    }
+    if(!t.match(/^[A-Za-z]+$/))
+    {
+        console.log("sfgd");
+        alert("enter value");
+        return  false;
+    }
+    else
+    {
+        alert("done");
+    }
+}
 
-// function Cpick()
-// {
+function Cpick()
+{
    
-//     let color = document.getElementById("f-color");
-//     let c = color.value;
-//     if(c.length == 0)
-//     {
-//         alert("enter name");
-//         return false;
-//     }
-//     if(!c.match(/^[A-Za-z]+$/))
-//     {
-//         console.log("sfgd");
-//         alert("enter value");
-//         return  false;
-//     }
-//     else
-//     {
-//         alert("done");
-//     }
-// }   
+    let color = document.getElementById("f-color");
+    let c = color.value;
+    if(c.length == 0)
+    {
+        alert("enter name");
+        return false;
+    }
+    if(!c.match(/^[A-Za-z]+$/))
+    {
+        console.log("sfgd");
+        alert("enter value");
+        return  false;
+    }
+    else
+    {
+        alert("done");
+    }
+}   
