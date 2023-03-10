@@ -8,6 +8,8 @@
     <title>Form</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body style="background-color: black;">
@@ -17,46 +19,61 @@
             <table>
                 <tr>
                     <td>
-                        <input type="text" placeholder="First Name" id="first-name" class="inputbr" onkeyup="Fnm()">
-                        <br><label for="first-name" class="errorp1">Enter valid Name</label>
+                        <input type="text" placeholder="First Name" id="First-name" class="inputbr" onkeyup="Fnm()">
+                        <span id="Fnmerror"></span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" placeholder="Last Name" class="inputbr" id="last-name">
-                        <br><label for="last-name" class="errorp1">Enter valid Name</label>
+                        <input type="text" placeholder="Last Name" class="inputbr" id="last-name" onkeyup="Lnm()">
+                        <span id="lnmerror"></span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="email" placeholder="Enter your Email" id="email" class="inputbr">
-                        <br><label for="email" class="errorp1">Enter valid Email</label>
+                        <input type="email" placeholder="Enter your Email" id="email" class="inputbr" onkeyup="Email()">
+                        <span id="emailerror"></span>
                     </td>
                 </tr>
-                <tr>
+                <!--<tr>
                     <td>
-                        <input type="number" placeholder="Enter your number" id="p-number" class="inputbr">
+                        <input type="number" placeholder="Enter your number" id="p-number" class="inputbr" onkeyup="Phone()">
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <br><label for="p-number" class="errorp2">Enter valid Number</label><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="b-date" class="lablen1">Enter your Birthdate:</label><br>
-                        <input type="date" id="b-date" class="inputbr1">
+                        <input type="date" id="b-date" class="inputbr1" onkeyup="Bdate()">
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <label for="b-date" class="errorp">Select Date</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="a-time" class="lablen">Schedule Your Appointment time </label><br>
-                        <input type="time" id="a-time" class="inputbr2">
+                        <input type="time" id="a-time" class="inputbr2" onkeyup="Stime()">
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <label for="a-time" class="errorp">Set time</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="f-color" class="lablen">Select your Favorite color:</label>
-                        <select id="f-color">
+                        <select id="f-color" onkeyup="Cpick()">
                             <option value="Black">Black</option>
                             <option value="White">White</option>
                             <option value="Blue">Blue</option>
@@ -66,29 +83,44 @@
                                 <p>Other</p>
                             </option>
                         </select>
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <label for="f-color" class="errorp">Select color</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="radio" class="lablen2">Select Payment method</label>
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <label for="radio" class="errorp">Chose method</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" id="r1" class="lablen">
-                        <label for="r1" class="lablen3">Cash on delivery</label><br>
-                        <input type="radio" id="r2" class="lablen">
-                        <label for="r2" class="lablen3">Debit Card</label><br>
-                        <input type="radio" id="r3" class="lablen">
-                        <label for="r3" class="lablen3">Credit Card</label>
+                        <input type="radio" id="r1" class="lablen" style="height: 1.5rem; width: 1.5rem;">
+                        <label for="r1" class="lablen3">Cash</label>
+                        <input type="radio" id="r2" class="lablen" style="height: 1.5rem; width: 1.5rem;">
+                        <label for="r2" class="lablen3">Debit</label>
+                        <input type="radio" id="r3" class="lablen" style="height: 1.5rem; width: 1.5rem;">
+                        <label for="r3" class="lablen3">Credit</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="range" class="lablen">Select Your age</label><br>
                         <input type="range" class="lablenr"><span id="span-range" class="lablen4">00</span>
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <label for="range" class="errorp">Select age</label>
                     </td>
                 </tr>
@@ -96,6 +128,11 @@
                 <tr>
                     <td>
                         <label for="u-photo" class="lablen5">Uplode your photo</label>
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <label for="u-photo" class="errorp">Choose file</label>
                         <input type="file" class="lablen6">
 
@@ -103,8 +140,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" id="checkbox" class="lablen7" style="height: 2rem; width: 2rem;">
+                        <input type="checkbox" id="checkbox" class="lablen7" style="height: 1.2rem; width: 2rem;">
                         <a href="#"><label for="checkbox" class="lablen8">terms&condition</label></a>
+                        <span class="span-error">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </span>
                         <label for="checkbox" class="errorp">Please check</label>
                     </td>
                 </tr>
@@ -112,7 +154,7 @@
                     <td>
                         <input type="submit" value="Submit" class="lablen9">
                     </td>
-                </tr>
+                </tr> -->
             </table>
         </form>
     </div>

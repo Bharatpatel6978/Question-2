@@ -35,25 +35,26 @@ table
     padding-top: 2.5rem;
     outline: none;
 }
-.errorp
+#Fnmerror
 {
-    
     color: red;
-    /* visibility: hidden; */
+    position: absolute;
+    top: 7rem;
+    right: 25.5rem;
 }
-.errorp1
+#lnmerror
 {
-    
     color: red;
-    /* visibility: hidden; */
-    margin-left: 30.5rem;
+    position: absolute;
+    top: 12.4rem;
+    right: 25.5rem;
 }
-.errorp2
+#emailerror
 {
-    
     color: red;
-    /* visibility: hidden; */
-    margin-left: 29.5rem;
+    position: absolute;
+    top: 17.4rem;
+    right: 25.5rem;
 }
 ::placeholder
 {
@@ -116,7 +117,6 @@ table
     color: white;
     font-size: 30px;
     margin-left: 2rem;
-    margin-top: 1.5rem;
 }
 .lablen4
 {
@@ -151,18 +151,23 @@ input.lablen7
     margin-left: 6rem;
     
 }
-.lablen8
-{
-    margin-left: 2rem;
+.lablen8 {
+    margin-left: 0rem;
     margin-top: 1.5rem;
-    font-size: 35px;
+    font-size: 28px;
 }
 .lablen9
 {
     margin-left: 11rem;
-    margin-top: 1.5rem;
-    font-size: 54px;
-    width: 19rem;
-    height: 5rem;
+    margin-top: 0.5rem;
+    font-size: 34px;
+    width: 10rem;
+    height: 3rem;
     margin-bottom: 2rem;
+    text-align: center;
+    background: #fb0505db;
+}
+i
+{
+    color: green;
 }
