@@ -4,7 +4,16 @@
     margin: 0;
     
 }
-table
+#table2
+{
+    margin-top: 4rem;
+    width: 82vw;
+   
+    box-shadow: 0 0 20rem 20px red;
+    margin-left: 6rem;
+    color: white;
+}
+#table1
 {
     margin-top: 4rem;
     width: 56vw;
@@ -97,6 +106,37 @@ table
     position: absolute;
     top: 45.9rem;
     left: 43.5rem;
+}
+#errorage
+{
+    color: red;
+    position: absolute;
+    top: 54.9rem;
+    left: 36.5rem;
+}
+#errorfile
+{
+    color: red;
+    position: absolute;
+    top: 60.9rem;
+    left: 40.5rem;
+}
+#errorcheck
+{
+    color: red;
+    position: absolute;
+    top: 69.6rem;
+    left: 39.5rem;
+}
+#submit
+{
+    border-radius: 35px;
+    text-align: center;
+    /* margin-left: 18rem; */
+    width: 9rem;
+    font-size: 2rem;
+    /* height: 3rem; */
+    background: red;
 }
 ::placeholder
 {
