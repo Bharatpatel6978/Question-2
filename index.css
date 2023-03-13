@@ -56,6 +56,48 @@ table
     top: 17.4rem;
     right: 25.5rem;
 }
+#errornum
+{
+    color: red;
+    position: absolute;
+    top: 22.4rem;
+    right: 25.5rem;
+}
+#errordate
+{
+    color: red;
+    position: absolute;
+    top: 29.4rem;
+    left: 36.5rem;
+}
+#errortime
+{
+    color: red;
+    position: absolute;
+    top: 36.4rem;
+    left: 36.5rem;
+}
+#errorpick
+{
+    color: red;
+    position: absolute;
+    top: 41.4rem;
+    left: 49.5rem;
+}
+#errorradio
+{
+    color: red;
+    position: absolute;
+    top: 45.9rem;
+    left: 43.5rem;
+}
+#errorage
+{
+    color: red;
+    position: absolute;
+    top: 45.9rem;
+    left: 43.5rem;
+}
 ::placeholder
 {
     color: #ffffff75;

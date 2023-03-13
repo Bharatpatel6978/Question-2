@@ -1,6 +1,5 @@
 
 
-
 function Fnm()
 {
     let firstnm = document.getElementById("First-name");
@@ -62,7 +61,7 @@ function Email()
         errorTxt.innerHTML = "Enter email";
         return false;
     }
-    if(!e.match(/^[^A-Z]*[a-z]\._\-[0-9]*[@][^A-Z][a-z]*[\.][a-z]{2,4}$/))
+    if(!e.match(/^([a-z0-9\.-]+)(@)([a-z0-9]+).([a-z]{2,3})$/))
     {
         console.log("sfgd");
         errorTxt.innerHTML="Please enter valid email";
@@ -75,90 +74,145 @@ function Email()
     }
 }
 
-function Phone()
+function Num()
 {
-   
-    let phone = document.getElementById("p-number");
-    let p = phone.value;
-    if(p.length == 0)
+    let number = document.getElementById("p-number");
+    let errortxt = document.getElementById("errornum");
+    let n = number.value;
+    if(n.length == 0)
     {
-        alert("enter name");
+        console.log("0");
+        errortxt.innerHTML = "Enter Number";
         return false;
     }
-    if(!p.match(/^[A-Za-z]+$/))
+    if(n.length > 10)
     {
-        console.log("sfgd");
-        alert("enter value");
+        console.log("11");
+        errortxt.innerHTML = "Enter valid Number";
+        return false;
+    }
+    if(!n.match(/^[0-9]{10}$/))
+    {
+        console.log("valid1");
+        errortxt.innerHTML="Please enter valid number";
         return  false;
     }
     else
     {
-        alert("done");
+        console.log("valid");
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
     }
 }
 
 function Bdate()
 {
-   
     let date = document.getElementById("b-date");
-    let b = date.value;
-    if(b.length == 0)
+    let errortxt = document.getElementById("errordate");
+    let e = date.value;
+    if(!e)
     {
-        alert("enter name");
+        console.log("0");
+        errortxt.innerHTML = "Please Select Time";
         return false;
-    }
-    if(!b.match(/^[A-Za-z]+$/))
-    {
-        console.log("sfgd");
-        alert("enter value");
-        return  false;
     }
     else
     {
-        alert("done");
+        console.log("valid");
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
     }
 }
-
-function Stime()
+function Atime()
 {
-   
     let time = document.getElementById("a-time");
+    let errortxt = document.getElementById("errortime");
     let t = time.value;
-    if(t.length == 0)
+    if(!t)
     {
-        alert("enter name");
+        console.log("0");
+        errortxt.innerHTML = "Please Select Time";
         return false;
-    }
-    if(!t.match(/^[A-Za-z]+$/))
-    {
-        console.log("sfgd");
-        alert("enter value");
-        return  false;
     }
     else
     {
-        alert("done");
+        console.log("valid");
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
     }
 }
-
 function Cpick()
 {
-   
-    let color = document.getElementById("f-color");
-    let c = color.value;
-    if(c.length == 0)
+    let pick = document.getElementById("f-color");
+    let errortxt = document.getElementById("errorpick");
+    let p = pick.value;
+    if (p == "") 
     {
-        alert("enter name");
+        console.log("0");
+        errortxt.innerHTML = "Please Select color";
         return false;
-    }
-    if(!c.match(/^[A-Za-z]+$/))
-    {
-        console.log("sfgd");
-        alert("enter value");
-        return  false;
     }
     else
     {
-        alert("done");
+        console.log("valid");
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
     }
-}   
+}
+function Radio()
+{
+    let r1 = document.getElementById("r1");
+    let r2 = document.getElementById("r2");
+    let r3 = document.getElementById("r3");
+    let errortxt = document.getElementById("errorradio");
+    if(r1.checked==true)
+    {
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+    else if(r2.checked==true)
+    {
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+    else if(r3.checked==true)
+    {
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+    else
+    {
+        errortxt.innerHTML = "Please Select method";
+        return false;
+    }
+}
+function Age()
+{
+    let age = document.getElementById("age");
+    let errortxt = document.getElementById("errorage");
+    let p = age.value;
+    if (!p) 
+    {
+        console.log("0");
+        errortxt.innerHTML = "Please Select color";
+        return false;
+    }
+    else
+    {
+        console.log("valid");
+        errortxt.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+}
+function Submit()
+{
+    if(! Fnm() || !Lnm() || ! Email() || ! Num() || ! Bdate() || ! Atime() || !Cpick() || ! Radio() || ! Age())
+    {
+        alert("Something Went wrong");
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
