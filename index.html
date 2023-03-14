@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: black;">
+    <script src="index.js"></script>
+    <div class="container " id="container1">
+        <form>
+            <center style="padding-top: 3rem;">
+                <h1 style="color: white;">Create Student</h1>
+            </center>
+            <table id="table1">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="First Name" id="First-name" class="inputbr" onkeyup="Fnm()">
+                        <span id="Fnmerror"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Last Name" class="inputbr" id="last-name" onkeyup="Lnm()">
+                        <span id="lnmerror"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Enter your Email" id="email" class="inputbr" onkeyup="Email()">
+                        <span id="emailerror"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="txt" placeholder="Enter your number" id="p-number" class="inputbr" onkeyup="Num()">
+                        <span id="errornum"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="b-date" class="lablen1">Enter your Birthdate:</label><br>
+                        <input type="date" id="b-date" class="inputbr1" onkeyup="Bdate()">
+                        <span id="errordate"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="a-time" class="lablen">Schedule Your Appointment time </label><br>
+                        <input type="time" id="a-time" class="inputbr2" onkeyup="Atime()">
+                        <span id="errortime"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="f-color" class="lablen">Select your Favorite color:</label>
+                        <select id="f-color" onkeyup="Cpick()">
+                            <option value=""></option>
+                            <option value="White">White</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Red">Red</option>
+                            <option value="Black">Black</option>
+                        </select>
+                        <span id="errorpick"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="radio" class="lablen2">Select Payment method</label>
+                        <span id="errorradio"></span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="r1" value="Cash" name="check" class="lablen"
+                            style="height: 1.5rem; width: 1.5rem;" onkeyup="Radio()">
+                        <label for="r1" class="lablen3">Cash</label>
+                        <input type="radio" id="r2" name="check" value="Card" class="lablen"
+                            style="height: 1.5rem; width: 1.5rem;" onkeyup="Radio()">
+                        <label for="r2" class="lablen3">Card</label>
+                        <input type="radio" id="r3" name="check" class="lablen" value="UPI"
+                            style="height: 1.5rem; width: 1.5rem;" onkeyup="Radio()">
+                        <label for="r3" class="lablen3">UPI</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="range" class="lablen">Select Your age</label>
+                        <input type="range" class="lablenr" min="1" max="100"
+                            oninput="this.nextElementSibling.value = this.value" onkeyup="Age()">
+                        <output style="color: white;font-size: 25px;" id="age"></output>
+                        <span id="errorage"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="u-photo" class="lablen5">Uplode your photo</label>
+                        <input type="file" class="lablen6" id="file" onkeyup="File1()">
+                        <span id="errorfile"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="checkbox" class="lablen7" style="height: 1.2rem; width: 2rem;"
+                            onkeyup="Check()" value="Checked">
+                        <a href="#"><label for="checkbox" class="lablen8">terms&condition</label></a>
+                        <span id="errorcheck"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <!-- <button id="submit" onclick="return Submit()" style="margin-bottom: 1rem;">Submit</button> -->
+                        <input type="button" value="Submit" id="submit" onclick="return Submit()" style="margin-bottom: 1rem;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <center style="padding-top: 8rem;">
+        <h1 style="color: white;">Data From Table</h1>
+    </center>
+    <table border="1" id="table">
+        
+    </table>
+</body>
+
+</html>

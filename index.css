@@ -1,0 +1,252 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    
+}
+#table
+{
+    margin-top: 4rem;
+    width: 82vw;
+   
+    box-shadow: 0 0 20rem 20px red;
+    margin-left: 6rem;
+    color: white;
+}
+#table1
+{
+    margin-top: 4rem;
+    width: 56vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 20rem 20px red;
+    margin-left: 12rem;
+}
+/* input
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+} */
+.inputbr
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 32rem;
+    margin-left: 6rem;
+    font-size: 25px;
+    padding-top: 2.5rem;
+    outline: none;
+}
+td
+{
+    padding: 1rem;
+}
+#Fnmerror
+{
+    color: red;
+    position: absolute;
+    top: 13rem;
+    right: 25.5rem;
+}
+#lnmerror
+{
+    color: red;
+    position: absolute;
+    top: 18.4rem;
+    right: 25.5rem;
+}
+#emailerror
+{
+    color: red;
+    position: absolute;
+    top: 23.4rem;
+    right: 25.5rem;
+}
+#errornum
+{
+    color: red;
+    position: absolute;
+    top: 28.4rem;
+    right: 25.5rem;
+}
+#errordate
+{
+    color: red;
+    position: absolute;
+    top: 32.4rem;
+    left: 41.5rem;
+}
+#errortime
+{
+    color: red;
+    position: absolute;
+    top: 39.7rem;
+    left: 51.5rem;
+}
+#errorpick
+{
+    color: red;
+    position: absolute;
+    top:47.4rem;
+    left: 49.5rem;
+}
+#errorradio
+{
+    color: red;
+    position: absolute;
+    top: 51.9rem;
+    left: 43.5rem;
+}
+#errorage
+{
+    color: red;
+    position: absolute;
+    top: 60.9rem;
+    left: 43.5rem;
+}
+#errorfile
+{
+    color: red;
+    position: absolute;
+    top: 66.9rem;
+    left: 40.5rem;
+}
+#errorcheck
+{
+    color: red;
+    position: absolute;
+    top: 74.6rem;
+    left: 39.5rem;
+}
+#submit
+{
+    border-radius: 35px;
+    text-align: center;
+    /* margin-left: 18rem; */
+    width: 9rem;
+    font-size: 2rem;
+    /* height: 3rem; */
+    background: red;
+}
+::placeholder
+{
+    color: #ffffff75;
+}
+.lablen
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+}
+.lablen1
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+}
+.inputbr1
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 12rem;
+    margin-left: 6rem;
+    font-size: 25px;
+    outline: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.inputbr2
+{
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 12rem;
+    margin-left: 6rem;
+    font-size: 25px;
+    padding-top: 0;
+    outline: none;
+}
+.lablen2
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+}
+.lablen3
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 2rem;
+}
+.lablen4
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+}
+.lablenr
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 6rem;
+}
+.lablen5
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+.lablen6
+{
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 0   ;
+}
+input.lablen7
+{
+    
+    margin-left: 6rem;
+    
+}
+.lablen8 {
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+    font-size: 28px;
+}
+.lablen9
+{
+    margin-left: 11rem;
+    margin-top: 0.5rem;
+    font-size: 34px;
+    width: 10rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: #fb0505db;
+}
+i
+{
+    color: green;
+}
